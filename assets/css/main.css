@@ -159,6 +159,7 @@ input, select, textarea {
 
 		.row > .col-6 {
 			width: 50%;
+			margin: 1em 0;
 		}
 
 		.row > .off-6 {
@@ -1523,6 +1524,11 @@ input, select, textarea {
 
 /* Section/Article */
 
+	section a {
+		text-decoration: none;
+		vertical-align: middle;
+	}	
+
 	section, article {
 		margin-bottom: 3em;
 	}
@@ -1534,6 +1540,9 @@ input, select, textarea {
 	header {
 		margin: 0 0 1.5em 0;
 	}
+		header.center {
+			text-align: center;
+		}
 
 		header > p {
 			margin: 0.5em 0 0 0;
@@ -1756,6 +1765,10 @@ input, select, textarea {
 		.icon > .label {
 			display: none;
 		}
+
+	.icon-background {
+		color: #EEB6A5;
+	}
 
 /* Nav */
 
