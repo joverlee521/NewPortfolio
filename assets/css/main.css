@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.text-center {
+	text-align: center;
+}
+
 /* Row */
 
 	.row {
@@ -1385,10 +1389,6 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
-	h5 {
-		text-align: center;
-	}
-
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -1540,9 +1540,6 @@ input, select, textarea {
 	header {
 		margin: 0 0 1.5em 0;
 	}
-		header.center {
-			text-align: center;
-		}
 
 		header > p {
 			margin: 0.5em 0 0 0;
