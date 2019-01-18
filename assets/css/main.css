@@ -1573,6 +1573,10 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.fit:hover {
+			cursor: pointer;
+		}
+
 		.image.featured {
 			display: block;
 			width: 100%;
@@ -1621,6 +1625,12 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background-color: #333333;
+		}
+		button.close{
+			font-size: 2rem;
+		}
+		button.close:hover {
+			background-color: inherit;
 		}
 
 		input[type="button"]:active,
@@ -1690,6 +1700,9 @@ input, select, textarea {
 			.button {
 				width: 100%;
 			}
+			button.close {
+				width: inherit;
+			}
 
 		}
 
@@ -1748,6 +1761,7 @@ input, select, textarea {
 	.icon {
 		position: relative;
 		text-decoration: none;
+		color: #986779;
 	}
 
 		.icon:before {

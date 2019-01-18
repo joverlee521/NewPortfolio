@@ -9,6 +9,7 @@
 		<title>Jover Lee</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -69,7 +70,7 @@
 									<div class="row">
 										<div class="col-6 col-6-medium col-12-small">
 											<h5 class="text-center">Left or Write</h5>
-											<a href="https://leftorwrite.herokuapp.com" target="_blank" class="image fit"><img src="images/leftOrWrite.png" alt="Left or Write"></a>
+											<img class="image fit" src="images/leftOrWrite.png" alt="Left or Write" data-toggle="modal" data-target=".leftOrWrite-modal">
 											<div class="row aln-center">
 												<a href="https://github.com/kmtenhouse/leftorwrite" target="_blank" class="icon fa-github-square"> Code</a>
 												<a href="https://leftorwrite.herokuapp.com" target="_blank" class="icon fa-github"> Website</a>
@@ -77,7 +78,7 @@
 										</div>
 										<div class="col-6 col-6-medium col-12-small">
 											<h5 class="text-center">Full Keto</h5>
-											<a href="https://jl-fullketo.herokuapp.com" target="_blank" class="image fit"><img src="images/fullKeto.png" alt="Full Keto"></a>
+											<img class="image fit" src="images/fullKeto.png" alt="Full Keto" data-toggle="modal" data-target=".fullKeto-modal">
 											<div class="row aln-center">
 												<a href="https://github.com/joverlee521/fullKeto" target="_blank" class="icon fa-github-square"> Code</a>
 												<a href="https://jl-fullketo.herokuapp.com" target="_blank" class="icon fa-github"> Website</a>
@@ -85,34 +86,18 @@
 										</div>
 										<div class="col-6 col-6-medium col-12-small">
 											<h5 class="text-center">My Hero Academia Memory Game</h5>
-											<a href="https://joverlee521.github.io/Memory-Game" target="_blank" class="image fit"><img src="https://user-images.githubusercontent.com/40774762/50712811-ba7c7b80-1027-11e9-94ce-eda855e7c79f.png" alt="My Hero Academia Memory Game"></a>
+											<img class="image fit" src="https://user-images.githubusercontent.com/40774762/50712811-ba7c7b80-1027-11e9-94ce-eda855e7c79f.png" alt="My Hero Academia Memory Game" data-toggle="modal" data-target=".clickyGame-modal">
 											<div class="row aln-center">
 												<a href="https://github.com/joverlee521/Memory-Game" target="_blank" class="icon fa-github-square"> Code</a>
 												<a href="https://joverlee521.github.io/Memory-Game" target="_blank" class="icon fa-github"> Website</a>
 											</div>
 										</div>
 										<div class="col-6 col-6-medium col-12-small">
-											<h5 class="text-center">Sequelized Burgers</h5>
-											<a href="https://jl-sequelizedburgers.herokuapp.com" target="_blank" class="image fit"><img src="images/sequelizedBurgers.png" alt="Sequelized Burgers"></a>
-											<div class="row aln-center">
-												<a href="https://github.com/joverlee521/sequelizedBurger" target="_blank" class="icon fa-github-square"> Code</a>
-												<a href="https://jl-sequelizedburgers.herokuapp.com" target="_blank" class="icon fa-github"> Website</a>
-											</div>
-										</div>
-										<div class="col-6 col-6-medium col-12-small">
 											<h5 class="text-center">Entertain Me</h5>
-											<a href="https://ethanpfisher.github.io/Project1" target="_blank" class="image fit"><img src="images/entertain-me.png" alt="Entertain Me"></a>
+											<img class="image fit" src="images/entertain-me.png" alt="Entertain Me" data-toggle="modal" data-target=".entertainMe-modal">
 											<div class="row aln-center">
 												<a href="https://github.com/joverlee521/EntertainMe" target="_blank" class="icon fa-github-square"> Code</a>
 												<a href="https://ethanpfisher.github.io/Project1" target="_blank" class="icon fa-github"> Website</a>
-											</div>
-										</div>
-										<div class="col-6 col-6-medium col-12-small">
-											<h5 class="text-center">One Piece RPG</h5>
-											<a href="https://joverlee521.github.io/One-Piece-RPG/" target="_blank" class="image fit"><img src="images/simple-rpg.png" alt="One Piece RPG"></a>
-											<div class="row aln-center">
-												<a href="https://github.com/joverlee521/One-Piece-RPG/" target="_blank" class="icon fa-github-square"> Code</a>
-												<a href="https://joverlee521.github.io/One-Piece-RPG/" target="_blank" class="icon fa-github"> Website</a>
 											</div>
 										</div>
 									</div>
@@ -157,12 +142,143 @@
 
 			</div>
 
+		<!-- Modals for Project Details -->
+		<!-- Left or Write Modal -->
+		<div class="modal fade leftOrWrite-modal" tabindex="-1" role="dialog" aria-labelledby="leftOrWrite-modal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">What is Left or Write?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-justify"> 
+						Left or Write is a cloud-based "Choose Your Own Adventure" reading and writing platform. <br/><br/>
+						The main goal of the project is to create a user friendly platform that does not require writers to learn special syntax to write branching fiction.
+						Other key features of this application are it's mobile friendly and it allows writers to create unfinished story lines so they can write episodically.
+					</p>
+					<p class="mb-5 pb-0"><u>Major Technologies Used: </u></p>
+					<ul class="ml-5 row">
+						<li class="col-6 col-lg-4 p-0 my-1">Bootstrap</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Handlebars</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Node</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Express</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Sequelize</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Passport.js</li>
+					</ul>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<a href="https://github.com/kmtenhouse/leftorwrite" target="_blank" class="icon fa-github-square btn btn-lg"> Code</a>
+					<a href="https://leftorwrite.herokuapp.com" target="_blank" class="icon fa-github btn btn-lg"> Website</a>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- Full Keto Modal -->
+		<div class="modal fade fullKeto-modal" tabindex="-1" role="dialog" aria-labelledby="fullKeto-modal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">What is Full Keto?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-justify"> 
+						Full Keto is a single page application that is dedicated to the Ketogenic lifestyle. <br/><br/>
+						The main goal of the project is to design a simple and elegant UI that allows users to search for Keto recipes and nutrition information of specific food items.
+					</p>
+					<p class="mb-5 pb-0"><u>Major Technologies Used: </u></p>
+					<ul class="ml-5 row">
+						<li class="col-6 col-lg-4 p-0 my-1">Materialize</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Handlebars</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Node</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Express</li>
+						<li class="col-6 col-lg-4 p-0 my-1">EDAMAM API</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Nutritionix API</li>
+					</ul>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<a href="https://github.com/joverlee521/fullKeto" target="_blank" class="icon fa-github-square btn btn-lg"> Code</a>
+					<a href="https://jl-fullketo.herokuapp.com" target="_blank" class="icon fa-github btn btn-lg"> Website</a>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- Clicky Game Modal -->
+		<div class="modal fade clickyGame-modal" tabindex="-1" role="dialog" aria-labelledby="clickyGame-modal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">What is My Hero Academia Memory Game?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-justify"> 
+						My Hero Academia Memory Game is a simple memory game built with React. <br/><br/>
+						The main goal of the project is to learn and understand the utility of React and stateful components while designing an entertaining memory game based off of the popular anime "My Hero Academia".
+					</p>
+					<p class="mb-5 pb-0"><u>Major Technologies Used: </u></p>
+					<ul class="ml-5 row">
+						<li class="col-6 col-lg-4 p-0 my-1">Bootstrap</li>
+						<li class="col-6 col-lg-4 p-0 my-1">JavaScript</li>
+						<li class="col-6 col-lg-4 p-0 my-1">React</li>
+					</ul>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<a href="https://github.com/joverlee521/Memory-Game" target="_blank" class="icon fa-github-square btn btn-lg"> Code</a>
+					<a href="https://joverlee521.github.io/Memory-Game" target="_blank" class="icon fa-github btn btn-lg"> Website</a>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- Entertain Me Modal -->
+		<div class="modal fade entertainMe-modal" tabindex="-1" role="dialog" aria-labelledby="entertainMe-modal" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">What is Entertain Me?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-justify"> 
+						Entertain Me is a single page application for searching events. <br/><br/>
+						The main goal of the project is to create a straight-forward UI that allows users to search for events based on location, date, and event category. The search results contains details about the event and a Google map that allows users to map to the event location.
+					</p>
+					<p class="mb-5 pb-0"><u>Major Technologies Used: </u></p>
+					<ul class="ml-5 row">
+						<li class="col-6 col-lg-4 p-0 my-1">Materialize</li>
+						<li class="col-6 col-lg-4 p-0 my-1">JavaScript</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Eventful API</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Google Maps API</li>
+						<li class="col-6 col-lg-4 p-0 my-1">Algolia Places</li>
+					</ul>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<a href="https://github.com/joverlee521/EntertainMe" target="_blank" class="icon fa-github-square btn btn-lg"> Code</a>
+					<a href="https://ethanpfisher.github.io/Project1" target="_blank" class="icon fa-github btn btn-lg"> Website</a>
+				</div>
+			  </div>
+			</div>
+		</div>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
